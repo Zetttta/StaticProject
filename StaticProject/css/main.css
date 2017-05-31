@@ -1,0 +1,125 @@
+/**
+ * このファイルの概要説明
+ * ログインページ以外で共通で使用するスタイルシート
+ * 
+ * このファイルの詳細説明
+ * ログインページ以外で共通で使用するスタイルシート
+ *
+ * システム名：    共通スタイルシート
+ * 作成者：        伊藤尚輝
+ * 作成日：        2017/05/18/14:00
+ * 最終更新日：    2017/05/18/16:30
+ * レビュー担当者：
+ * レビュー日：    
+ * バージョン：    
+ */
+
+/* コンテンツ全体を包み込む */
+#wrapper {
+    position:absolute;        /* 全ての親要素になる為、absolute */
+    top:0px;                  /* 要素の */
+    left:0px;                 /* 位置を */
+    right:0px;                /* 中心に */
+    bottom:0px;               /* する為の */
+    margin:auto;              /* 記述 */
+    width:100%;
+    height:100%;
+    background-color:#FFFFFF; /* 背景色は白 */
+    text-align:center;       /* 中央に文字を揃える */
+}
+
+/* ヘッダー */
+#header {
+    position:fixed;           /* 画面に固定したい */
+    left:0px;                 /* 左上を基準にしたいのでleft指定 */
+    top:0px;                  /* ヘッダーなので最上部 */
+    height:50px;              /* ヘッダーの高さを指定 */
+    width:100%;               /* ヘッダーなのでブラウザの横幅に合わせる */
+    z-index: 2;               /* z軸指定 */
+}
+
+/* ロゴタイプ */
+#logotype {
+    float:left;               /* 左揃え */
+    height:100px;              /* 高さ指定 */
+    width:300px;              /* 横幅を指定 */
+}
+
+/* メニュー */
+#headMenu {
+    background-color:#3399DD; /* 背景色の指定、明るい青色 */
+    color: #FFFFFF;           /* wrapperの背景色と同じく文字色は白 */
+    float:right;              /* 右揃え */
+    width:120px;              /* 横幅を指定 */
+}
+
+/* メニュー内の"メニュー" */
+#headMenuTitle {
+    position:absolute;        /* 全ての親要素になる為、absolute */
+    background-color:#3399DD; /* 背景色の指定、明るい青色 */
+    color: #FFFFFF;           /* wrapperの背景色と同じく文字色は白 */
+    top:0px;
+    height:25px;              /* 高さを指定 */
+    width:120px;              /* 横幅を指定 */
+}
+
+/* メニュー内の"マイページ" */
+#headMenuMypage {
+    position:absolute;        /* 全ての親要素になる為、absolute */
+    background-color:#3399DD; /* 背景色の指定、明るい青色 */
+        top:0px;
+    color: #FFFFFF;           /* wrapperの背景色と同じく文字色は白 */
+    height:25px;              /* 高さを指定 */
+    width:120px;              /* 横幅を指定 */
+}
+
+/* メニュー内の"管理者画面" */
+#headMenuManagement {
+    position:absolute;        /* 全ての親要素になる為、absolute */
+    background-color:#3399DD; /* 背景色の指定、明るい青色 */
+        top:0px;
+    color: #FFFFFF;           /* wrapperの背景色と同じく文字色は白 */
+    height:25px;              /* 高さを指定 */
+    width:120px;              /* 横幅を指定 */
+}
+
+/* メニュー内の"ログアウト" */
+#headMenuLogout {
+    position:absolute;        /* 全ての親要素になる為、absolute */
+    background-color:#3399DD; /* 背景色の指定、明るい青色 */
+        top:0px;
+    color: #FFFFFF;           /* wrapperの背景色と同じく文字色は白 */
+    height:25px;              /* 高さを指定 */
+    width:120px;              /* 横幅を指定 */
+}
+
+/* コンテンツ 共通でない内容はここに入る */
+#content {
+    width:100%;
+    position:relative;
+    top:50px;
+    bottom:20px;
+    left:0px;
+    right:opx;
+    margin:auto;
+    text-align:center;         /* 中央に文字を揃える */
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align:left;
+}
+
+/* フッター */
+#footer {
+    background-color:#3399DD; /* 背景色の指定、明るい青色 */
+    position:fixed;           /* 画面に固定したい */
+    left:0px;                 /* 左下を基準にしたいのでleft指定 */
+    bottom:0px;               /* フッターなので最下部 */
+    height:20px;              /* フッターの高さを指定 */
+    width:100%;               /* フッターなのでブラウザの横幅に合わせる */
+    color: #FFFFFF;           /* wrapperの背景色と同じく文字色は白 */
+    text-align:right;         /* 右下に文字を揃える */
+    z-index: 2;               /* z軸指定 */
+}

@@ -1,0 +1,35 @@
+﻿/**
+ * このファイルの概要説明
+ * ログインページ以外で共通で使用するスタイルシート
+ * 
+ * このファイルの詳細説明
+ * ログインページ以外で共通で使用するスタイルシート
+ *
+ * システム名：    共通スタイルシート
+ * 作成者：        伊藤尚輝
+ * 作成日：        2017/05/22/9:00
+ * 最終更新日：    
+ * レビュー担当者：
+ * レビュー日：    
+ * バージョン：    
+ */
+
+td.gj{
+    text-align:right;
+}
+
+#resButton{
+    position:relative;
+    background-color:#3399DD;
+    color:#FFFFFF;
+    width:50px;
+    height:25px;
+    float:left;
+    border-radius: 7px;
+    text-align:center;
+}
+
+td.title{
+    background-color:#3399DD;
+    color:#FFFFFF;
+}

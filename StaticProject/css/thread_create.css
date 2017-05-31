@@ -1,0 +1,71 @@
+/**
+ * このファイルの概要説明
+ * thread_createで使用するスタイルシート
+ * 
+ * このファイルの詳細説明
+ * thread_createで使用するスタイルシート
+ *
+ * システム名：    共通スタイルシート
+ * 作成者：        伊藤尚輝
+ * 作成日：        2017/05/22/9:00
+ * 最終更新日：    
+ * レビュー担当者：
+ * レビュー日：    
+ * バージョン：    
+ */
+
+#createBox{
+  position:relative;
+  margin:auto;
+  right:0;
+  left:0;
+  width:500px;
+  height:500px;
+}
+
+form.thread_create{
+    text-align:left;
+}
+
+textarea {
+    resize:none;
+    
+}
+
+#title{
+    float:left;
+}
+
+
+#fadeConf{
+    position:relative;
+    background-color:#3399DD;
+    color:#FFFFFF;
+    width:100px;
+    height:25px;
+    float:right;
+    border-radius: 7px;
+}
+
+#fadeConfBox{
+    position:absolute;
+    background-color:#FFFFFF;
+    left:0px;
+    top:25px;
+    width:100%;
+    height:300px;
+    border:thin;
+    border: solid #3399DD;
+    z-index:2;/* z軸指定 */
+}
+
+.thread_inner{
+    overflow:scroll;
+}
+
+#paging{
+        position:absolute;
+        text-align:center;
+        width:100%;
+        bottom:0px;
+}

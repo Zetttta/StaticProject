@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+
+/**
+ * このファイルの概要説明
+ *
+ * このファイルの詳細説明
+ *
+ * システム名：管理者用画面
+ * 作成者：坂田
+ * 作成日：2017/5/18
+ * 最終更新日：2017/5/18
+ * レビュー担当者：
+ * レビュー日：
+ * バージョン：
+ *
+
+ *ボタンのスタイルに関してはhttp://delaymania.com/201410/web/css-button-flat-design/を参考にしました
+ */
+
+ .button a {
+  width: 280px;
+  background-color: #41ad43;
+  border-radius: 3px;
+  box-shadow: 0 3px 0 rgba(136,136,136,1);
+  color: #ffffff;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px auto;
+  padding: 10px 0;
+}
+.button a:hover {
+  box-shadow: 0 1px 0 rgba(136,136,136,1);
+  margin: 12px auto 8px;
+}

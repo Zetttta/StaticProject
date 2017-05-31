@@ -1,0 +1,149 @@
+
+/**
+* 店舗のリスト表示場面のCSS
+*
+* 店舗のリスト表示場面のCSSです。
+* 店舗のリスト表示場面のCSSが作成されています。
+*
+* システム名：店舗のリスト表示場面のCSS
+* 作成者：朴
+* 作成日：2017/05/23
+* 最終更新日：2017/05/23
+* レビュー担当者：
+* レビュー日：
+* バージョン：1.0
+*/
+*{
+  margin:0;
+  padding:0;
+}
+/*
+store select viewのCSS
+*/
+#content{
+
+}
+
+#store_table{
+  width:70%;
+  margin:15% auto 0;
+  background-color:#3399DD;
+
+}
+#store_table_head{
+  width:100%;
+  height:40px;
+  color:#041530;
+  font-weight: bold;
+  border-bottom: solid 1px #8DC1DD;
+  background-color:#3399DD;
+}
+#store_list_title{
+  width:80%;
+  padding:10px 0 0 0 ;
+  float:left;
+  background-color:#3399DD;
+}
+
+#store_list_insert{
+  width:20%;
+  padding:10px 0 0 0 ;
+  float:left;
+  background-color:#3399DD;
+}
+#store_list_insert a{
+  color:#041530;
+}
+#store_list_insert a:hover{
+color:#2e3c54;
+}
+#store_table .table_row{
+  width:100%;
+  height:35px;
+  padding:5px 0 0;
+  border-bottom: solid 1px #8DC1DD;
+}
+#store_table .table_row .store_name{
+  width:80%;
+  float:left;
+  color:#fff;
+}
+#store_table .table_row .store_edit{
+  width:20%;
+  float:left;
+  color:#fff;
+
+}
+#store_table .table_row .store_edit a{
+  color:#e2edff;
+}
+#store_table .table_row .store_edit a:hover{
+  color:#fff;
+}
+
+#store_paging{
+  margin: 30px 0 100px 0;
+}
+
+/*
+store edit view のCSS
+*/
+#store_edit_form{
+  width:60%;
+  height:300px;
+  margin:10% auto;
+}
+#edit_title{
+  width:100%;
+  margin: 0 0 20px 0;
+  text-align: left;
+  font-size:3vw;
+}
+#store_edit_form .edit_row{
+  width:100%;
+  height:50px;
+}
+#store_edit_form .edit_title{
+  width:20%;
+  height:34px;
+  float:left;
+  padding: 0 0 0;
+  margin:10px 0 0 0;
+  font-size:2vw;
+  text-align: left;
+
+}
+#store_edit_form .edit_input{
+  width:80%;
+  height:40px;
+  float:left;
+}
+#shop_edit_name{
+  width: 100%;
+  height:40px;
+  float:left;
+  margin: 0 0 0;
+}
+#shop_edit_add{
+  width: 100%;
+  height:40px;
+  float:left;
+  margin: 0 0 0;
+}
+#shop_edit_phone{
+  width: 100%;
+  height:40px;
+  float:left;
+  margin: 0 0 0;
+}
+#store_edit_submit{
+  width:100%;
+
+}
+#store_edit_submit input{
+  width: 60px;
+  height:40px;
+  margin:20px 5px 0 10px;
+  background-color:#8DC1DD;
+  border:solid 1px #8DC1DD;
+}

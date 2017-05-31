@@ -1,0 +1,258 @@
+/**
+ * ログイン場面、お知らせ一覧、お知らせ個別、お知らせの編集と削除のCSSです。
+ *
+ * 各場面のCSSに動作ページがコメントされている。
+ *
+ * システム名：ログインシステム
+ * 作成者：朴
+ * 作成日：2017/05/18
+ * 最終更新日：2017/05/22
+ * レビュー担当者：
+ * レビュー日：
+ * バージョン：1.0
+ */
+*{
+  margin : 0;
+  padding : 0;
+}
+
+/*
+login main
+*/
+#login_wrap{
+  width:50%;
+  max-width: 400px;
+  min-height: 400px;
+  height:50%;
+  margin: 10% auto 0;
+  padding:0;
+  text-align: center;
+}
+#login_wrap span{
+  width: 90%;
+  font-size: 3vw;
+}
+#error{
+  width: 90%;
+  height: 40px;
+  margin: 30px auto 0;
+}
+#error span{
+  font-size:1vw;
+}
+#login_id{
+  width: 90%;
+  height:50px;
+  margin: 15px 0 0 0;
+  border:1px solid #8e8e8e;
+}
+#login_pass{
+  width: 90%;
+  height:50px;
+  margin: 15px 0 0 0;
+  border:1px solid #8e8e8e;
+}
+#login_sub{
+  width: 90%;
+  height:50px;
+  margin: 15px 0 0 0;
+  background: #3399DD;
+  color:#fff;
+  border:1px solid #3399DD;
+}
+/*
+news
+*/
+#news_wrap{
+  width:80%;
+  height: 50%;
+  max-width: 700px;
+  min-height: 400px;
+  margin: 15% auto;
+
+}
+#news_title{
+
+}
+#news_name{
+  width: 60%;
+  height:30px;
+  float: left;
+  padding: 8px 0 0 0 ;
+  color: #fff;
+  background-color: #3399DD;
+}
+#news_name span{
+  margin: 10px;
+}
+#news_start{
+  width: 40%;
+  height:30px;
+  float: left;
+  padding: 8px 0 0 0 ;
+  color: #fff;
+  text-align: center;
+  background-color: #3399DD;
+}
+#news_start span{
+  margin: 10px;
+}
+#news_text{
+  padding:50px 10px 20px 10px;
+  min-height:150px;
+}
+#to_news_select{
+  width:90px;
+  height:30px;
+  color:#fff;
+  background-color: #3399DD;
+  border:1px solid #3399DD;
+  float:right;
+
+}
+/*
+news_select main
+*/
+#news_table{
+  max-width: 90%;
+  height: 50%;
+
+  margin: 15% auto;
+}
+
+#news_list_title{
+  width:90%;
+  background-color: #3399DD;
+  height: 35px;
+  padding: 0;
+  float: left;
+}
+#news_list_newst{
+  width:10%;
+  background-color: #3399DD;
+  height: 35px;
+  padding: 0;
+  float: left;
+}
+#news_table .table_row{
+  width:100%;
+  height: 35px;
+  padding: 0;
+  border-bottom:solid 1px #8DC1DD;
+  float: left;
+}
+#news_table .table_row .news_title{
+  width: 60%;
+  float: left;
+}
+#news_table .table_row .news_start{
+  min-width:250px;
+  width: 30%;
+  float: left;
+}
+#news_table .table_row .news_edit{
+  width:10%;
+  float: left;
+}
+/*
+news_edit main
+*/
+#news_edit_form{
+  width:70%;
+  min-height:500px;
+  margin:5% auto 0;
+}
+#news_edit_title{
+  width:100%;
+  margin: 0 0 20px 0;
+  text-align: left;
+  font-size:2.7vw;
+}
+#news_edit_name{
+  width:100%;
+  padding:10px;
+  margin:10px 0 0 0;
+}
+#news_edit_start{
+  width:100%;
+  padding:10px;
+  margin:10px 0 0 0;
+}
+#news_edit_end{
+  width:100%;
+  padding:10px;
+  margin:10px 0 0 0;
+}
+#news_edit_text{
+  width:100%;
+  min-height:200px;
+  padding:10px;
+  margin:10px 0 0 0;
+}
+#news_edit_submit{
+  width:100%;
+  float:left;
+}
+#news_edit_submit input{
+  width:70px;
+  height:40px;
+  color:#fff;
+  padding:0 10px;
+  background-color: #3399DD;
+  border:1px solid #3399DD;
+  float:right;
+}
+
+/*
+news_insert_viewのCSS
+*/
+#news_insert_form{
+  width:55%;
+  min-height:500px;
+  margin:5% auto 0;
+}
+
+#news_insert_title{
+  width:100%;
+  margin: 0 0 20px 0;
+  text-align: left;
+  font-size:2.7vw;
+}
+#news_insert_name{
+  width:100%;
+  height:35px;
+  margin:10px 0 0;
+  padding: 0 5px;
+}
+#news_insert_start{
+  width:100%;
+  height:35px;
+  margin:10px 0 0;
+  padding: 0 5px;
+}
+#news_insert_end{
+  width:100%;
+  height:35px;
+  margin:10px 0 0;
+  padding: 0 5px;
+}
+#news_insert_text{
+  width:100%;
+  height:100px;
+  margin:10px 0 0;
+  padding:5px;
+}
+#news_insert_submit{
+  width:100%;
+  margin:10px 0 0;
+  padding:0 0 0 12px;
+}
+#news_insert_submit input{
+  width:80px;
+  height:35px;
+  padding:0 5px;
+  color:#fff;
+  float:right;
+  background-color:#8DC1DD;
+  border:solid 1px #8DC1DD;
+}

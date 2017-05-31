@@ -1,0 +1,39 @@
+リダイレクト先修正
+
+共通ヘッダーを管理者/一般で表示を分けるようにした
+
+コピペしたページ上部の
+<?php
+    // 管理者か否かで読み込む、jsファイルを分岐する
+    echo '<script type="text/javascript" src="../../../js/headMenuManagement.js"></script>';
+    // echo '<script type="text/javascript" src="js/headMenu.js"></script>';
+?>
+を
+<?php
+    // 管理者か否かで読み込む、jsファイルを分岐する
+    // 参照先は必要に応じて/や..でstatic_project直下のファイルを参照して下さい-->
+    require_once('function/database_session.php');
+    // ユーザー情報
+    $Identify = getUser();
+    // 管理者フラグ取得
+    $judge = getManager($Identify);
+    if($judge==1){
+      echo '<script type="text/javascript" src="js/headMenuManagement.js"></script>';
+    }else{
+      echo '<script type="text/javascript" src="js/headMenu.js"></script>';
+    }
+?>
+に修正
+パスは書き換えてください！../
+3箇所書き換える場所があります！
+
+require_once("function/database_session.php"); // 読み込み
+// ユーザー情報
+$Identify = getUser();
+// 管理者フラグ取得
+$judge = getManager($Identify);
+
+を最初に行う
+
+スレッド作成、編集画面のsession
+個のスレッドの、編集ボタンの表示
