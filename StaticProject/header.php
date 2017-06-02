@@ -19,8 +19,7 @@
 <?php
   // 管理者か否かで管理者用画面の表示を切り替える
   // 管理者のときのみ表示
-  require_once('function/database_session.php');
-  require_once('function/xss.php');
+
   ?>
 <!-- ヘッダーを宣言 -->
 <div id="header">
@@ -40,7 +39,7 @@
           $sql = "SELECT * FROM m_user";
           $sql .= " WHERE user_id = :user";//誰のマイページを開くのか。
           $sth = $dbh->prepare($sql); // SQLを準備
-          $sth->bindValue(":user", "{$_GET['user_id']}");
+          $sth->bindValue(":user", "{$_SESSION["identify"]}");
           // SQLを発行
           $sth->execute();
 
@@ -59,8 +58,7 @@
 
         }?>
         <tr>
-            <th>名前</th>
-            <td><?php ph($username);?></td>
+            <td colspan="2" id="profile_name"><?php ph($username);?></td>
         </tr>
         <tr>
         <?php
@@ -79,8 +77,7 @@
           }
         ?>
             <?php while ($row = $sth->fetch(PDO::FETCH_ASSOC)) {?>
-            <th>所属</th>
-            <td><?php ph($row["store_name"]);?></td>
+            <td colspan="2" id="profile_store"><img src=""><?php ph($row["store_name"]);?></td>
             <?php } ?>
         </tr>
         <tr>

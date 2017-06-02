@@ -14,6 +14,9 @@
  * バージョン：
  */
 
+*{
+
+}
 /* コンテンツ全体を包み込む */
 #wrapper {
     position:absolute;        /* 全ての親要素になる為、absolute */
@@ -26,7 +29,7 @@
     height:100%;
     background-color:#FFFFFF; /* 背景色は白 */
     text-align:center;       /* 中央に文字を揃える */
-    font-family: "Rounded Mplus 1c";
+
 }
 
 /* ヘッダー */
@@ -37,6 +40,7 @@
     height:100px;              /* ヘッダーの高さを指定 */
     width:100%;               /* ヘッダーなのでブラウザの横幅に合わせる */
     z-index: 2;               /* z軸指定 */
+    background-color: #96b6ea;
 }
 
 /* ロゴタイプ */
@@ -45,21 +49,40 @@
     height:100%;              /* 高さ指定 */
     min-width:300px;              /* 横幅を指定 */
     position:fixed;
-    background-color:#434e60;
+
 }
 #user_info{
     margin: 40px 0 0 0 ;
-    color: #e2e2e2;
+
 }
 #user_info table{
-  margin: 0 0 0 30px;
+  width:250px;
+  height:400px;
+  margin: 0 0 0 15px;
+  color: #494949;
+  font-family: "Rounded Mplus 1c";
+
+  border:1px solid #96b6ea;
+}
+#user_info th{
 
 }
 #user_info tr{
     height:40px;
 }
 #user_info td{
-  font-weight: lighter;
+
+}
+#profile_name{
+  height:40px;
+  font-weight:300;
+  font-size:25px;
+  padding:10px;
+}
+#profile_store{
+  padding: 0 0 0 10px;
+  height:40px;
+  font-size:15px;
 }
 
 /* メニュー */
@@ -126,6 +149,7 @@ table {
     margin-left: auto;
     margin-right: auto;
     text-align:left;
+
 }
 
 /* フッター */
