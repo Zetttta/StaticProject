@@ -1,7 +1,7 @@
 /**
  * このファイルの概要説明
  * ログインページ以外で共通で使用するスタイルシート
- * 
+ *
  * このファイルの詳細説明
  * ログインページ以外で共通で使用するスタイルシート
  *
@@ -10,8 +10,8 @@
  * 作成日：        2017/05/18/14:00
  * 最終更新日：    2017/05/18/16:30
  * レビュー担当者：
- * レビュー日：    
- * バージョン：    
+ * レビュー日：
+ * バージョン：
  */
 
 /* コンテンツ全体を包み込む */
@@ -26,6 +26,7 @@
     height:100%;
     background-color:#FFFFFF; /* 背景色は白 */
     text-align:center;       /* 中央に文字を揃える */
+    font-family: "Rounded Mplus 1c";
 }
 
 /* ヘッダー */
@@ -33,7 +34,7 @@
     position:fixed;           /* 画面に固定したい */
     left:0px;                 /* 左上を基準にしたいのでleft指定 */
     top:0px;                  /* ヘッダーなので最上部 */
-    height:50px;              /* ヘッダーの高さを指定 */
+    height:100px;              /* ヘッダーの高さを指定 */
     width:100%;               /* ヘッダーなのでブラウザの横幅に合わせる */
     z-index: 2;               /* z軸指定 */
 }
@@ -41,8 +42,24 @@
 /* ロゴタイプ */
 #logotype {
     float:left;               /* 左揃え */
-    height:100px;              /* 高さ指定 */
-    width:300px;              /* 横幅を指定 */
+    height:100%;              /* 高さ指定 */
+    min-width:300px;              /* 横幅を指定 */
+    position:fixed;
+    background-color:#434e60;
+}
+#user_info{
+    margin: 40px 0 0 0 ;
+    color: #e2e2e2;
+}
+#user_info table{
+  margin: 0 0 0 30px;
+
+}
+#user_info tr{
+    height:40px;
+}
+#user_info td{
+  font-weight: lighter;
 }
 
 /* メニュー */
@@ -95,11 +112,11 @@
 
 /* コンテンツ 共通でない内容はここに入る */
 #content {
-    width:100%;
+
     position:relative;
-    top:50px;
+    top:100px;
     bottom:20px;
-    left:0px;
+    left:300px;
     right:opx;
     margin:auto;
     text-align:center;         /* 中央に文字を揃える */
